@@ -204,3 +204,35 @@ a:hover {
     font-size: 40px;
     text-align: center;
 }
+
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    gap: 20px; /* Adds spacing between image and text */
+}
+
+.headshot {
+    max-width: 200px;
+    border-radius: 50%; /* Circular image */
+    flex-shrink: 0; /* Prevents image from shrinking */
+}
+
+.text-content {
+    flex: 1; /* Allows text to take up available space */
+}
+
+@media screen and (max-width: 768px) {
+.content-wrapper {
+    flex-direction: column; /* Stack image above text */
+    align-items: center; /* Center-align content */
+    text-align: center; /* Center-align text */
+    padding: 0 20px; /* Add padding on smaller screens */
+}
+
+.headshot {
+    margin-bottom: 20px; /* Add space below the image */
+    }
+}
