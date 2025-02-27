@@ -4,21 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Ishva Mehta</title>
+    <title>Ishva Mehta - About Me</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles for layout */
+        .content-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap; /* Allows wrapping for smaller screens */
+            gap: 20px; /* Adds spacing between image and text */
+        }
+
+        .headshot {
+            max-width: 200px;
+            border-radius: 50%; /* Circular image */
+            flex-shrink: 0; /* Prevents image from shrinking */
+        }
+
+        @media screen and (max-width: 768px) {
+            .content-wrapper {
+                flex-direction: column; /* Stack image above text */
+                align-items: center; /* Center-align content */
+                text-align: center; /* Center-align text */
+            }
+
+            .headshot {
+                margin-bottom: 20px; /* Add space below the image */
+            }
+        }
+    </style>
 </head>
 
 <body>
     <!-- Header Section -->
     <header>
         <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="active">About Me</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="photos.html">Photography</a></li>
-                </ul>
-            </nav>
+            <div class="header-content">
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="active">About</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -26,14 +54,18 @@
     <main>
         <section id="home" class="section">
             <div class="container">
-                <!-- Title -->
-                <h1>Welcome to My Website!</h1>
+                <!-- Content Wrapper -->
+                <div class="content-wrapper">
+                    <!-- Headshot -->
+                    <img src="images/ipm_headshot.jpg" alt="Ishva Mehta's Headshot" class="headshot">
 
-                <!-- Headshot -->
-                <img src="images/ipm_headshot.jpg" alt="Your Headshot" style="max-width: 200px; border-radius: 50%; margin: 20px 0;">
-
-                <!-- Introduction Paragraph -->
-                <p>Hello! My name is Ishva. I majored in Data Science and Economics, and minored in Public Policy at Rutgers. I enjoy working on exciting projects, capturing beautiful moments through photography, and exploring new opportunities to grow and learn.</p>
+                    <!-- Text Content -->
+                    <div class="text-content">
+                        <h1>Hi! I’m Ishva</h1>
+                        <p>I graduated with a major in Data Science and Economics and a minor in Public Policy from Rutgers University.</p>
+                        <p>I enjoy working on exciting projects, capturing beautiful moments through photography, and exploring new opportunities to grow and learn. Feel free to explore my website to learn more about me, my projects, and my photography!</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -41,7 +73,6 @@
     <!-- Footer Section -->
     <footer>
         <div class="container">
-            <!-- Social Media Links -->
             <a href="mailto:ishva.mehta@rutgers.edu"><i class="fas fa-envelope"></i></a>
             <a href="https://www.linkedin.com/in/ishvapm" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/ishvapm" target="_blank"><i class="fab fa-github"></i></a>
