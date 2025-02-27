@@ -86,6 +86,22 @@ main {
     margin-bottom: 20px; /* Adds spacing between paragraphs */
 }
 
+/* Content Wrapper for main section */
+.content-wrapper {
+    display: flex;
+    align-items: center; /* Vertically align image and text */
+    justify-content: space-between; /* Space between image and text */
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    gap: 20px; /* Adds spacing between image and text */
+}
+
+/* Headshot styling */
+.headshot {
+    max-width: 200px; /* Limit image size */
+    width: 100%; /* Ensure responsiveness */
+    border-radius: 50%; /* Make the image circular */
+}
+
 /* Footer Styling */
 footer {
     text-align: center;
