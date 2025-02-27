@@ -1,220 +1,241 @@
 body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+margin: 0;
+padding: 0;
+height: 100%;
+display: flex;
+flex-direction: column;
 }
-
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #ffff;
-    margin: 0px;
-    text-align: center;
+font-family: Arial, sans-serif;
+line-height: 1.6;
+background-color: #ffff;
+margin: 0px;
+text-align: center;
 }
-
 main {
-    flex: 1;
+flex: 1;
 }
 
 .container {
-    max-width: 960px;
-    margin: 0 auto;
+max-width: 960px;
+margin: 0 auto;
 }
 
 header {
-    background-color: #ffff;
-    color: black;
-    padding: 10px 0 ;
-    text-align: center;
+background-color: #ffff;
+color: black;
+padding: 10px 0 ;
+text-align: center;
 }
 
 .header-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 .header-content .logo img {
-    padding-top: 20px;
-    max-width: 200px;
-    height: auto;
+padding-top: 20px;
+max-width: 200px;
+height: auto;
 }
 
 nav {
-    text-align: center;
-    width: 100%;
+text-align: center;
+width: 100%;
 }
 
 nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    gap: 100px;
+list-style-type: none;
+display: flex;
+justify-content: center;
+gap: 100px;
 }
 
 nav li {
-    margin: 0;
+margin: 0;
 }
 
 nav a {
-    color: black;
-    text-decoration: none;
-    padding: 5px 10px;
+color: black;
+text-decoration: none;
+padding: 5px 10px;
 }
 
 nav a:hover {
-    background-color: #ffe6ea;
-    color: black; 
+background-color: #ffe6ea;
+color: black;
 }
 
 nav a.active {
-    text-decoration: underline; 
+text-decoration: underline;
 }
 
 main {
-    background-color: #ffff;
+background-color: #ffff;
 }
 
 .section {
-    padding: 40px 0;
+padding: 40px 0;
+text-align: left
 }
 
-/* Added padding for better readability */
-.section p {
-    margin: 20px; /* Adds spacing between paragraphs */
-}
-
-/* Content Wrapper for main section */
-.content-wrapper {
-    display: flex;
-    align-items: center; /* Vertically align image and text */
-    justify-content: space-between; /* Space between image and text */
-    flex-wrap: wrap; /* Allows wrapping for smaller screens */
-    gap: 20px; /* Adds spacing between image and text */
-}
-
-/* Headshot styling */
-.headshot {
-    max-width: 200px; /* Limit image size */
-    width: 100%; /* Ensure responsiveness */
-    border-radius: 50%; /* Make the image circular */
-}
-
-/* Footer Styling */
 footer {
-    text-align: center;
-    padding: 20px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    background-color: #ffe6ea;
+text-align: center;
+padding: 20px 0;
+position: relative;
+bottom: 0;
+width: 100%;
+background-color: #ffe6ea;
 }
-
 footer .container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+display: flex;
+justify-content: center;
+gap: 20px;
 }
 
 footer a {
-    color: black;
-    font-size: 22px;
-    text-decoration: none;
+color: black;
+font-size: 22px;
+text-decoration: none;
+height: auto;
 }
 
 footer a:hover {
-    color: rgb(33, 48, 101);
+color: rgb(33, 48, 101);
 }
-
-/* General Link Styling */
 a {
-    color: black; 
-    text-decoration: none;
+color: black;
+text-decoration: none;
+font-weight: bold;
 }
 
 /* Set link hover color */
 a:hover {
-    text-decoration: underline; 
+text-decoration: underline;
 }
-
-/* Row Styling for Images */
 .row {
-    display: flex;
-    flex-wrap: wrap; /* Allows wrapping for smaller screens */
-    padding-bottom: 20px; /* Adds space at the bottom */
+display: flex;
+flex-wrap: wrap;
+padding: 0 4px;
+align-items: center;
+justify-content: center;
+padding-bottom: 20px;
 }
-  
+
 .column {
-    max-width: 30%;
+max-width: 30%;
+padding: 0 4px;
 }
 
-/* Responsive Columns */
+.column img {
+margin-top: 8px;
+vertical-align: middle;
+width: 100%;
+}
+
 @media screen and (max-width: 800px) {
-   .column {
-      flex-basis: 50%; /* Each column takes up half the width */
-      max-width: 50%;
-   }
+.column {
+flex: 50%;
+max-width: 50%;
 }
-  
-@media screen and (max-width: 600px) {
-   .column {
-      flex-basis: 100%; /* Each column takes up full width */
-      max-width: 100%;
-   }
 }
 
-/* Projects Section Styling */
- .projects-grid {
-    display:inline;
-    flex-wrap: wrap;
-    justify-content: center; 
+/* Unstacks the 2 columns */
+@media screen and (max-width: 600px) {
+.column {
+flex: 100%;
+max-width: 100%;
+}
+}
+.projects-grid {
+display:inline;
+flex-wrap: wrap;
+justify-content: center;
 }
 
 .project-item {
-    max-width: 100%;
-    background-color: #f0f0f0;
-    padding: 20px;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding-right: 100px;
+max-width: 100%;
+background-color: #f0f0f0;
+padding: 20px;
+text-align: center;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+padding-right: 100px;
 }
 
 .project-item img {
-    max-width: 80%;
-    border-radius: 8px;
+max-width: 80%;
+border-radius: 8px;
 }
 
 .project-description {
-    margin-top: 15px;
-    text-align: left;
+margin-top: 15px;
+text-align: left;
 }
 
 .project-description h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+font-size: 1.5rem;
+margin-bottom: 10px;
 }
 
 .project-description p {
-    font-size: 1rem;
-    color: #666;
-    line-height: 1.4;
+font-size: 1rem;
+color: #666;
+line-height: 1.4;
 }
 
 .project-description .btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 8px 16px;
-    background-color: black;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+display: inline-block;
+margin-top: 10px;
+padding: 8px 16px;
+background-color: black;
+color: white;
+text-decoration: none;
+border-radius: 4px;
+transition: background-color 0.3s ease;
 }
 
 .project-description .btn:hover {
-    background-color: #485bc4;
+background-color: #a0b0e7;
 
+}
+.title{
+font-size: 40px;
+text-align: center;
+}
+
+/* Content Wrapper for main section */
+.content-wrapper {
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap; /* Allows wrapping for smaller screens */
+gap: 20px; /* Adds spacing between image and text */
+}
+
+/* Headshot styling */
+.headshot {
+max-width: 200px;
+border-radius: 50%; /* Circular image */
+flex-shrink: 0; /* Prevents image from shrinking */
+}
+
+/* Text content styling */
+.text-content {
+flex: 1; /* Allows text to take up available space */
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+.content-wrapper {
+flex-direction: column; /* Stack image above text */
+align-items: center; /* Center-align content */
+text-align: center; /* Center-align text */
+padding: 0 20px; /* Add padding on smaller screens */
+}
+
+.headshot {
+margin-bottom: 20px; /* Add space below the image */
+}
 }
