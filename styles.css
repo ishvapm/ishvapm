@@ -205,7 +205,7 @@ a:hover {
     text-align: center;
 }
 
-
+/* Content Wrapper for main section */
 .content-wrapper {
     display: flex;
     align-items: center;
@@ -214,25 +214,28 @@ a:hover {
     gap: 20px; /* Adds spacing between image and text */
 }
 
+/* Headshot styling */
 .headshot {
     max-width: 200px;
     border-radius: 50%; /* Circular image */
     flex-shrink: 0; /* Prevents image from shrinking */
 }
 
+/* Text content styling */
 .text-content {
     flex: 1; /* Allows text to take up available space */
 }
 
+/* Responsive design for smaller screens */
 @media screen and (max-width: 768px) {
-.content-wrapper {
-    flex-direction: column; /* Stack image above text */
-    align-items: center; /* Center-align content */
-    text-align: center; /* Center-align text */
-    padding: 0 20px; /* Add padding on smaller screens */
-}
+    .content-wrapper {
+        flex-direction: column; /* Stack image above text */
+        align-items: center; /* Center-align content */
+        text-align: center; /* Center-align text */
+        padding: 0 20px; /* Add padding on smaller screens */
+    }
 
-.headshot {
-    margin-bottom: 20px; /* Add space below the image */
+    .headshot {
+        margin-bottom: 20px; /* Add space below the image */
     }
 }
