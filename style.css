@@ -102,7 +102,7 @@ footer a {
 }
 
 footer a:hover {
-    color: rgb(72, 91, 196);
+    color: rgb(33, 48, 101);
 }
 a {
     color: black; 
@@ -197,7 +197,7 @@ a:hover {
 }
 
 .project-description .btn:hover {
-    background-color: #485bc4;
+    background-color: #a0b0e7;
 
 }
 .title{
