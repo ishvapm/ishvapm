@@ -81,33 +81,28 @@ text-align: left
 }
 
 footer {
-text-align: center;
-padding: 20px 0;
-position: relative;
-bottom: 0;
-width: 100%;
-background-color: #ffe6ea;
+  text-align: center;
+  padding: 20px 0;
+  position: fixed; /* Fixes footer at the bottom of the viewport */
+  bottom: 0;
+  width: 100%;
+  background-color: #ffe6ea; /* Light pink background for visibility */
 }
+
 footer .container {
-display: flex;
-justify-content: center;
-gap: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adds spacing between links */
 }
 
 footer a {
-color: black;
-font-size: 22px;
-text-decoration: none;
-height: auto;
+  color: black; /* Ensures links are visible */
+  font-size: 22px; /* Makes links readable */
+  text-decoration: none; /* Removes underline */
 }
 
 footer a:hover {
-color: rgb(33, 48, 101);
-}
-a {
-color: black;
-text-decoration: none;
-font-weight: bold;
+  color: rgb(33, 48, 101); /* Changes color on hover for interactivity */
 }
 
 /* Set link hover color */
