@@ -83,7 +83,7 @@ text-align: left
 footer {
   text-align: center;
   padding: 20px 0;
-  position: fixed; /* Fixes footer at the bottom of the viewport */
+  position: fixed; /* Keeps footer at the bottom of the viewport */
   bottom: 0;
   width: 100%;
   background-color: #ffe6ea; /* Light pink background for visibility */
@@ -92,17 +92,17 @@ footer {
 footer .container {
   display: flex;
   justify-content: center;
-  gap: 20px; /* Adds spacing between links */
+  gap: 30px; /* Adds spacing between icons */
 }
 
 footer a {
-  color: black; /* Ensures links are visible */
-  font-size: 22px; /* Makes links readable */
-  text-decoration: none; /* Removes underline */
+  color: black; /* Ensures icons are visible */
+  font-size: 28px; /* Adjusts icon size */
+  text-decoration: none; /* Removes underline from links */
 }
 
 footer a:hover {
-  color: rgb(33, 48, 101); /* Changes color on hover for interactivity */
+  color: rgb(33, 48, 101); /* Changes icon color on hover */
 }
 
 /* Set link hover color */
