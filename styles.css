@@ -83,7 +83,7 @@ text-align: left
 footer {
   text-align: center;
   padding: 10px 0;
-  position: fixed; /* Keeps footer at the bottom of the viewport */
+  position: relative;
   bottom: 0;
   width: 100%;
   background-color: #ffe6ea; /* Light pink background for visibility */
