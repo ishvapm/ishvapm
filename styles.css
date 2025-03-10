@@ -82,7 +82,7 @@ text-align: left
 
 footer {
   text-align: center;
-  padding: 20px 0;
+  padding: 10px 0;
   position: fixed; /* Keeps footer at the bottom of the viewport */
   bottom: 0;
   width: 100%;
